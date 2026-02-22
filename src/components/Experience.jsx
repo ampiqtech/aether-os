@@ -8,8 +8,9 @@ export const Experience = () => {
             <color attach="background" args={['#111']} />
 
             {/* Lights & Environment */}
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[10, 10, 5]} intensity={1.5} castShadow />
+
+            <ambientLight intensity={0.2} />
+            <directionalLight position={[10, 10, 5]} intensity={1.0} castShadow />
             <Environment preset="city" />
 
             {/* Main Content */}

@@ -1,1 +1,41 @@
-/* emptied for tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-body: 'Outfit', sans-serif;
+    --color-primary: #00f0ff;
+    --color-secondary: #7000ff;
+    --color-accent: #ff003c;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: #050510;
+    color: white;
+    overflow: hidden;
+    /* Prevent scroll on body, handle in canvas/overlay */
+}
+
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
